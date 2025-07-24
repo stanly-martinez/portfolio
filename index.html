@@ -1,48 +1,72 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Stanley Martínez Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stanley Martínez Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <header>
     <img src="img/Stanley.png" alt="Stanley Martínez Photo" class="profile-pic" />
     <h1>Bryan Stanley Martínez</h1>
     <p>Developer and cybersecurity beginner</p>
     <nav>
+      <a href="#home">Home</a>
       <a href="#projects">Projects</a>
+      <a href="#machines">Machines</a>
       <a href="#docs">Files</a>
-      <a href="#contact">Contact</a>
     </nav>
   </header>
 
+  <section id="home">
+    <button class="collapsible-header">🏠 Home</button>
+    <div class="collapsible-content">
+      <p>I'm Stanley, a passionate beginner in cybersecurity and programing.</p>
+      <p>📧 Contact: stanly.martinez52@gmail.com</p>
+    </div>
+    <!-- (who am I, contact, and social links) -->
+  </section>
+
   <section id="projects">
-    <h2>Featured projects</h2>
-    <ul>
-      <li><a href="https://github.com/stanly-martinez/port_scanner" target="_blank" rel="noopener">Port Scanner</a></li>
-      <li><a href="https://github.com/stanly-martinez/log_analyzer" target="_blank" rel="noopener">Log Analyzer</a></li>  
-      <li><a href="https://github.com/stanly-martinez/cipher_tool" target="_blank" rel="noopener">Cipher Tool</a></li>
-    </ul>
+    <button class="collapsible-header">📂 Projects</button>
+    <div class="collapsible-content">
+      <ul>
+        <li><a href="https://github.com/stanly-martinez/port_scanner" target="_blank" rel="noopener">Port Scanner</a>
+        </li>
+        <li><a href="https://github.com/stanly-martinez/log_analyzer" target="_blank" rel="noopener">Log Analyzer</a>
+        </li>
+        <li><a href="https://github.com/stanly-martinez/cipher_tool" target="_blank" rel="noopener">Cipher Tool</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="machines">
+    <button class="collapsible-header">🖥️ Machines</button>
+    <div class="collapsible-content">
+      <p>Writeups of retired Hack The Box machines</p>
+    </div>
   </section>
 
   <section id="docs">
-    <h2>Files</h2>
-    <p>Relevant Files</p>
+    <button class="collapsible-header">📄 Files</button>
+    <div class="collapsible-content">
     <ul class="file-list">
-      <li><a href="docs/Resume Bryan Stanley Martínez.pdf" download>Resume (PDF)</a></li>
-      <li><a href="docs/GoogleCybersecurityProfessionalCertificate.pdf" download>Google Cybersecurity Professional Certificate (PDF)</a></li>
+      <li><button onclick="loadPDF('docs/Resume Bryan Stanley Martínez.pdf')">View Resume</button></li>
+      <li><button onclick="loadPDF('docs/GoogleCybersecurityProfessionalCertificate.pdf')">View Google Cybersecurity
+          Professional Certificate</button></li>
     </ul>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Contact me: <a href="stanly.martinez52@gmail.com">stanly.martinez52@gmail.com</a></p>
+  
+    <iframe id="pdfFrame" class="pdf-viewer"></iframe>
+    </div>
   </section>
 
   <footer>
     <p>© 2025 Stanley Martínez. All rights reserved.</p>
   </footer>
+  <script src="script.js"></script>
 </body>
+
 </html>
