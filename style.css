@@ -63,6 +63,7 @@ footer {
 }
 
 .collapsible-header {
+  display: none;
   cursor: pointer;
   background-color: #eee;
   padding: 1em;
