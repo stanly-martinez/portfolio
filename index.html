@@ -15,6 +15,7 @@
     <p>Developer and cybersecurity beginner</p>
     <nav>
       <a href="#home">Home</a>
+      <a href="#exercises">Exercises</a>
       <a href="#projects">Projects</a>
       <a href="#machines">Machines</a>
       <a href="#docs">Files</a>
@@ -28,6 +29,53 @@
       <p>📧 Contact: stanly.martinez52@gmail.com</p>
     </div>
     <!-- (who am I, contact, and social links) -->
+  </section>
+
+  <section id="exercises">
+    <button class="collapsible-header"> 🛡️ Cybersecurity Exercises</button>
+  
+    <div id="content" class="collapsible-group">
+      <div class="collapsible-group">
+        <button class="collapsible-header">Policy Manual</button>
+        <div class="collapsible-content">
+          <h3>🛡️ Information Security Policy Manual (University Project)</h3>
+          <p>This policy manual integrates ISO/IEC 27001, 27002, 27005, NIST CSF, GDPR, OSHA, PCI DSS.</p>
+          <iframe src="docs/security_analyst_exercises/Policy Manual.pdf" width="100%" height="600px"></iframe>
+        </div>
+
+        <button class="collapsible-header">Access Control Worksheet</button>
+        <div class="collapsible-content">
+          <iframe src="docs/security_analyst_exercises/Access control worksheet.pdf" width="100%" height="600px"></iframe>
+        </div>
+
+        <button class="collapsible-header">Incident handler's journal</button>
+        <div class="collapsible-content">
+          <iframe src="docs/security_analyst_exercises/Incident handler's journal .pdf" width="100%" height="600px"></iframe>
+        </div>
+
+        <button class="collapsible-header">Alert icket</button>
+        <div class="collapsible-content">
+          <iframe src="docs/security_analyst_exercises/Alert ticket.pdf" width="100%" height="600px"></iframe>
+        </div>
+
+        <button class="collapsible-header">File permisions in linux</button>
+        <div class="collapsible-content">
+          <iframe src="docs/security_analyst_exercises/File permissions in Linux.pdf" width="100%" height="600px"></iframe>
+        </div>
+
+        <button class="collapsible-header">Final report - Filtering PII and Financial Information</button>
+        <div class="collapsible-content">
+          <iframe src="docs/security_analyst_exercises/Final report -  Filtering  PII and Financial Information.pdf" width="100%" height="600px"></iframe>
+        </div>
+
+        <button class="collapsible-header">Vulnerability assesment report</button>
+        <div class="collapsible-content">
+          <iframe src="docs/security_analyst_exercises/Vulnerability assessment report.pdf" width="100%" height="600px"></iframe>
+        </div>
+
+      </div>
+    </div>
+  
   </section>
 
   <section id="projects">
@@ -52,21 +100,22 @@
 
   <section id="docs">
     <button class="collapsible-header">📄 Files</button>
-    <div class="collapsible-content">
-    <ul class="file-list">
-      <li><button onclick="loadPDF('docs/Resume Bryan Stanley Martínez.pdf')">View Resume</button></li>
-      <li><button onclick="loadPDF('docs/GoogleCybersecurityProfessionalCertificate.pdf')">View Google Cybersecurity
-          Professional Certificate</button></li>
-    </ul>
-  
-    <iframe id="pdfFrame" class="pdf-viewer"></iframe>
+    <div id="files-group" class="collapsible-group">
+      <button class="collapsible-header">Resume</button>
+      <div class="collapsible-content">
+        <iframe src="docs/Resume Bryan Stanley Martínez.pdf" width="100%" height="600px"></iframe>
+      </div>
+      <button class="collapsible-header">Google Cybersecurity Professional Certificate</button>
+      <div class="collapsible-content">
+        <iframe src="docs/GoogleCybersecurityProfessionalCertificate.pdf" width="100%" height="600px"></iframe>
+      </div>
     </div>
   </section>
 
   <footer>
     <p>© 2025 Stanley Martínez. All rights reserved.</p>
   </footer>
-  <script src="script.js?v=1.0"></script>
+  <script src="script.js?v=2.2"></script>
 </body>
 
 </html>
